@@ -43,8 +43,7 @@ function onGalleryClick(event) {
     window.addEventListener('keydown', onEscClick);
     
     function onEscClick(event) {
-    console.log(event.code)
-    if (event.code !== 'Escape') {
+    if (event.code === 'Escape') {
         instance.close();  
     }
 }
