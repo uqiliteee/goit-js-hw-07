@@ -39,5 +39,19 @@ function onGalleryClick(event) {
     <img src= "${libraryRef}">
     `)
     instance.show()
+    
+    window.addEventListener('keydown', onEscClick);
+    
+    function onEscClick(event) {
+    console.log(event.code)
+    if (event.code !== 'Escape') {
+        instance.close();  
+    }
 }
+}
+
+
+
+
+
 
